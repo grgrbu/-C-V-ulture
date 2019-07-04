@@ -65,7 +65,7 @@ namespace Routes
             }
             return cnt;
         }
-        private Bitmap GetImageBitmap()
+        public Bitmap GetImageBitmap()
         {
             return GetImageBitmapFromUrl(picture_url);
         }

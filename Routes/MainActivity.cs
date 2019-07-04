@@ -12,6 +12,7 @@ using System;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using Square.Picasso;
 
 namespace Routes
 {
@@ -22,11 +23,7 @@ namespace Routes
         private ImageView imgView;
         //private TextView pictureInfo;
         private string imagePath;
-        private List<Painting> all_paintings = new List<Painting> { new Painting("Завтрак аристократа", "Федотов Павел Андреевич"),
-            new Painting("Вот-те и батькин обед!", "Венецианов Алексей Гаврилович"),
-            new Painting("Автопортрет", "Кипренский Орест Адамович") ,
-            new Painting("Автопортрет", "Брюллов (до 1822 – Брюлло) Карл Павлович") ,
-            new Painting("Автопортрет", "Сухово-Кобылина Софья Васильевна") };
+        private List<Painting> all_paintings = ContentLoader.load();
 
         public const string key = "3fa1f65516424aefa6af2a2abaf63308";
         public readonly HttpClient client = new HttpClient
@@ -43,14 +40,6 @@ namespace Routes
 
             loadImageBtn = (Button)FindViewById(Resource.Id.button4);
             searchImageBtn = (Button)FindViewById(Resource.Id.button5);
-            imgView = (ImageView)FindViewById(Resource.Id.imageView1);
-            //pictureInfo = (TextView)FindViewById(Resource.Id.textView57);
-
-            all_paintings[0].setTags(new List<string> { "indoor", "building", "sitting", "cat", "old", "table", "woman", "man", "standing", "holding", "black", "white", "room", "dog" });
-            all_paintings[1].setTags(new List<string> { "sitting", "person", "building", "man", "small", "young", "brown", "boy", "holding", "laptop", "little", "old", "baby", "monkey", "white", "laying", "playing" });
-            all_paintings[2].setTags(new List<string> { "person", "man", "wearing", "looking", "striped", "young", "holding", "shirt", "boy", "using", "hand", "sitting", "white", "red", "laptop", "old", "standing", "woman", "suit" });
-            all_paintings[3].setTags(new List<string> { "book", "text", "looking", "sitting", "man", "cat", "old", "holding", "dark", "brown", "red", "laying", "black", "umbrella", "white", "standing", "bird", "room" });
-            all_paintings[4].setTags(new List<string> { "person", "man", "indoor", "holding", "front", "building", "boy", "looking", "standing", "young", "sitting", "fire", "old", "posing", "woman", "fireplace", "room", "wearing", "laptop" });
             loadImageBtn.Click += delegate {
 
                 Intent image = new Intent();
@@ -76,7 +65,9 @@ namespace Routes
             if (resultCode == Result.Ok)
             {
                 string path = ActualPath.GetActualPathFromFile(data.Data, this);
+                ImageView imgView = (ImageView)FindViewById(Resource.Id.imageView1);
                 imgView.SetImageURI(data.Data);
+                //Picasso.With(Application.Context).Load("http://i.imgur.com/DvpvklR.png").Into(imgView);
                 imagePath = path;
             }
         }
@@ -100,9 +91,11 @@ namespace Routes
             ImageView img_view = (ImageView)FindViewById(Resource.Id.imageView57);
             List<string> taglist = new List<string>(tmp["description"]["tags"].ToObject<List<string>>());
             Painting pic = findBestPaint(taglist);
-            pictureName.Text = pic.name + " " + pic.author;
+            pictureName.Text = pic.name + " - " + pic.author;
             pictureInfo.Text = pic.info;
-            //img_view.SetImageURI(path);
+            //Picasso.With(Application.Context).Load(Android.Net.Uri.Parse(path)).Into(img_view);
+            //img_view.SetImageBitmap(pic.GetImageBitmap());
+            //img_view.SetImageURI(Android.Net.Uri.Parse(path));
         }
         private byte[] GetBytesFromImage(string path)
         {
