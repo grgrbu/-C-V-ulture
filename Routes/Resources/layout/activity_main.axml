@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:divider="@drawable/separator"
         android:dividerPadding="15dp"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -57,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="25px"
-        android:maxHeight "220px"
+        android:maxHeight = "220px"
         android:minHeight="25px"
         android:id="@+id/imageView1"
         android:layout_marginBottom="@dimen/fastscroll_default_thickness"
@@ -67,7 +66,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation = "horizontal"
+        android:orientation = "horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -142,3 +141,4 @@
 
 
     </LinearLayout>
+</LinearLayout>

@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:divider="@drawable/separator"
         android:dividerPadding="15dp"
         android:orientation="horizontal"
         android:showDividers="middle">
@@ -90,15 +89,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation = "horizontal"
+        android:orientation = "horizontal">
 
         <LinearLayout
-      
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation = "vertical"
-            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material"
-            >
+            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material" >
             <TextView
                 android:text="Название маршрута"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -154,5 +151,5 @@
         </LinearLayout>
 
         
-
+    </LinearLayout>
 </LinearLayout>
