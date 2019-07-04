@@ -3391,20 +3391,20 @@ namespace Routes
 			// aapt resource value: 0x7f0a009f
 			public const int button3 = 2131361951;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int button4 = 2131361991;
-			
 			// aapt resource value: 0x7f0a00c8
-			public const int button5 = 2131361992;
+			public const int button4 = 2131361992;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int buttonLogIn = 2131361989;
+			// aapt resource value: 0x7f0a00c9
+			public const int button5 = 2131361993;
+			
+			// aapt resource value: 0x7f0a00c6
+			public const int buttonLogIn = 2131361990;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int buttonPanel = 2131361906;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int buttonSignUp = 2131361990;
+			// aapt resource value: 0x7f0a00c7
+			public const int buttonSignUp = 2131361991;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int center = 2131361868;
@@ -3568,8 +3568,8 @@ namespace Routes
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int masked = 2131361994;
+			// aapt resource value: 0x7f0a00cb
+			public const int masked = 2131361995;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int message = 2131361948;
@@ -3610,8 +3610,8 @@ namespace Routes
 			// aapt resource value: 0x7f0a00b7
 			public const int notification_main_column_container = 2131361975;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int or = 2131361988;
+			// aapt resource value: 0x7f0a00c5
+			public const int or = 2131361989;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int outline = 2131361888;
@@ -3797,7 +3797,10 @@ namespace Routes
 			public const int textView2 = 2131361954;
 			
 			// aapt resource value: 0x7f0a00c2
-			public const int textView57 = 2131361986;
+			public const int textView56 = 2131361986;
+			
+			// aapt resource value: 0x7f0a00c3
+			public const int textView57 = 2131361987;
 			
 			// aapt resource value: 0x7f0a00b3
 			public const int text_input_password_toggle = 2131361971;
@@ -3847,8 +3850,8 @@ namespace Routes
 			// aapt resource value: 0x7f0a0013
 			public const int transition_transform = 2131361811;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int txtCreateAccount = 2131361987;
+			// aapt resource value: 0x7f0a00c4
+			public const int txtCreateAccount = 2131361988;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int uniform = 2131361844;
@@ -3865,8 +3868,8 @@ namespace Routes
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int visible = 2131361993;
+			// aapt resource value: 0x7f0a00ca
+			public const int visible = 2131361994;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int withText = 2131361859;

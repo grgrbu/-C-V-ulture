@@ -66,38 +66,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation = "horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation = "vertical"
-            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material"
-            >
-            <TextView
-                android:text="Название картины\nАвтор картинны"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/textView1" />
-            <TextView
-                android:text="Зал !!\nОписание картины"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="195.0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView57"
-                android:layout_marginRight="25.0dp"
-                android:layout_marginBottom = "25px" />
-        </LinearLayout>
-
+        android:orientation = "vertical"
+        android:weightSum = "100"
+        >
         <LinearLayout
       
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation = "vertical"
-            android:layout_marginRight = "@dimen/abc_action_bar_elevation_material">
+            android:orientation = "horizontal"
+            android:layout_marginRight = "@dimen/abc_action_bar_elevation_material"
+            android:layout_weight = "40">
             
             <Button
             android:layout_width="fill_parent"
@@ -110,7 +88,9 @@
             android:padding = "3dp"
             android:text = "Нравится"
             android:textColor="#ff000000"
-            android:layout_marginBottom = "70dp"
+            android:layout_marginBottom = "1dp"
+            android:layout_marginRight = "10dp"
+            android:layout_marginLeft = "10dp"
         />
             <Button
             android:layout_width="fill_parent"
@@ -123,10 +103,39 @@
             android:padding = "3dp"
             android:text = "Найти картину в музее"
             android:textColor="#ff000000"
-            android:layout_marginBottom = "10dp"
+            android:layout_marginBottom = "1dp"
         />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation = "vertical"
+            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:layout_weight = "25"
+            >
+            <TextView
+                android:text="Название картины\nАвтор картинны"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/textView56" />
+            <TextView
+                android:text="Зал !!\nОписание картины"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="195.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView57"
+                android:layout_marginRight="25.0dp"
+                android:layout_marginBottom = "25px" 
+                
+            />
+        </LinearLayout>
+
+        
 
             
 
