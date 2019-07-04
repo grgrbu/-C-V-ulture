@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:divider="@drawable/separator"
+        android:dividerPadding="15dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableLeft = "@drawable/plus"
+            android:layout_weight="1"
+            android:id="@+id/button1"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:textColor="#00b0e4"
+            android:drawableLeft = "@drawable/popular"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:drawableLeft = "@drawable/my_routes"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:drawableLeft = "@drawable/profile"
+            android:textColor="#00b0e4" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:maxHeight "220px"
+        android:minHeight="25px"
+        android:id="@+id/imageView1"
+        android:layout_marginBottom="@dimen/fastscroll_default_thickness"
+        android:layout_marginEnd = "@dimen/abc_action_bar_overflow_padding_end_material"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "horizontal"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation = "vertical"
+            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            >
+            <TextView
+                android:text="Название картины\nАвтор картинны"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/textView1" />
+            <TextView
+                android:text="Зал !!\nОписание картины"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="195.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginRight="25.0dp" 
+                android:layout_marginBottom = "25px" />
+
+            <TextView
+                android:text="Следующая картина Вашего маршрута находится в зале номер"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="195.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginRight="25.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation = "vertical"
+            android:layout_marginRight = "@dimen/abc_action_bar_elevation_material">
+            
+            <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:drawableLeft = "@drawable/like"
+            android:background="#ff4d80e8"
+            android:padding = "3dp"
+            android:text = "Нравится"
+            android:textColor="#ff000000"
+            android:layout_marginBottom = "70dp"
+        />
+            <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:drawableLeft = "@drawable/search"
+            android:background="#ff4d80e8"
+            android:padding = "3dp"
+            android:text = "Найти картину в музее"
+            android:textColor="#ff000000"
+            android:layout_marginBottom = "10dp"
+        />
+
+        </LinearLayout>
+
+            
+
+
+
+    </LinearLayout>
