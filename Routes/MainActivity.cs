@@ -97,14 +97,12 @@ namespace Routes
 
             TextView pictureName = (TextView)FindViewById(Resource.Id.textView56);
             TextView pictureInfo = (TextView)FindViewById(Resource.Id.textView57);
-            //pictureInfo.Text = tmp["description"]["tags"].ToString();
+            ImageView img_view = (ImageView)FindViewById(Resource.Id.imageView57);
             List<string> taglist = new List<string>(tmp["description"]["tags"].ToObject<List<string>>());
-            //pictureInfo.Text = taglist.ToString();
             Painting pic = findBestPaint(taglist);
             pictureName.Text = pic.name + " " + pic.author;
-            //JToken data = JToken.Parse(resp);
-            //string tmp = data["description"]["captions"][0]["text"].ToString();
-            //text.Text = tmp;
+            pictureInfo.Text = pic.info;
+            //img_view.SetImageURI(path);
         }
         private byte[] GetBytesFromImage(string path)
         {

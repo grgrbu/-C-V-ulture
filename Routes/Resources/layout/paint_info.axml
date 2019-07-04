@@ -58,7 +58,7 @@
         android:minWidth="25px"
         android:maxHeight = "220px"
         android:minHeight="25px"
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView57"
         android:layout_marginBottom="@dimen/fastscroll_default_thickness"
         android:layout_marginEnd = "@dimen/abc_action_bar_overflow_padding_end_material"
     />
