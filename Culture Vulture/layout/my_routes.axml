@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:dividerPadding="15dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:layout_marginBottom = "@dimen/item_touch_helper_max_drag_scroll_per_frame">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableLeft = "@drawable/plus"
+            android:layout_weight="1"
+            android:id="@+id/buttonCreateRoute"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonMyRoutes"
+            android:textColor="#00b0e4" 
+            android:drawableLeft = "@drawable/popular"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonPopular"
+            android:drawableLeft = "@drawable/my_routes"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonProfile"
+            android:drawableLeft = "@drawable/profile"
+            android:textColor="#00b0e4" />
+    </LinearLayout>
+
+  
+
+    
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:weightSum = "100"
+        android:layout_marginLeft = "20px"
+        android:layout_marginBottom = "@dimen/abc_action_bar_default_height_material">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation = "vertical"
+            android:layout_weight = "90"
+            android:paddingLeft = "@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            >
+            <TextView
+                android:text="Русский романтизм в Третьяковке"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_weight = "50"
+                android:id="@+id/textView1" />
+            <TextView
+                android:text="Длина маршрута: 60 минут"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="195.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginRight="25.0dp" />
+
+        </LinearLayout>
+
+         <LinearLayout
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight = "0"
+            android:layout_marginRight = "@dimen/abc_floating_window_z"
+            android:orientation = "vertical">
+            
+                <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:id="@+id/btnInfo_Rom"
+                android:drawableLeft = "@drawable/info"
+                android:background="#ff4d80e8"
+                android:padding = "3dp"
+                android:text = "   Инфо"
+                android:textColor="#ff000000" 
+                android:layout_marginBottom = "10dp"
+            />
+        </LinearLayout>       
+    </LinearLayout>
+</LinearLayout>
+

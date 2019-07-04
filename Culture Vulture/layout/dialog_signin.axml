@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/txtEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Введите Email"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/txtPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint=" Пароль"
+        android:layout_below="@id/txtEmail"
+        />
+
+    <Button
+        android:text="Войти"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="15"
+        android:id="@+id/buttonSignIn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="15dp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:background="#ff397ced"
+        android:layout_below="@id/txtPassword"
+        />
+</RelativeLayout>

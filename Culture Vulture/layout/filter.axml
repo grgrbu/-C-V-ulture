@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:text="1. Музеи"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_height="0dp"
+            android:textColor="#397ced"
+            android:id="@+id/txtCreateGenre"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="20dp" />
+
+                        <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/check_gallery"
+                        android:text="Третьяковская Галерея"
+                        android:textStyle="normal"
+                        />
+
+                        <TextView
+                            android:text="2. Стили картин:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_height="0dp"
+                            android:textColor="#397ced"
+                            android:id="@+id/txtCreateGenre"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_rom"
+                            android:text="Романтизм"
+                            android:textStyle="normal"
+                        />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_rea"
+                            android:text="Реализм"
+                            android:textStyle="normal"
+                        />
+
+                         <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_ac"
+                            android:text="Академизм"
+                            android:textStyle="normal"
+                        />
+    
+                         <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_mod"
+                            android:text="Модерн"
+                            android:textStyle="normal"
+                        />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_cla"
+                            android:text="Классицизм"
+                            android:textStyle="normal"
+                        />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_ori"
+                            android:text="Ориентализм"
+                            android:textStyle="normal"
+                        />
+    
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_mari"
+                            android:text="Маринизм"
+                            android:textStyle="normal"
+                        />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_imp"
+                            android:text="Импрессионизм"
+                            android:textStyle="normal"
+                        />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_sym"
+                            android:text="Символизм"
+                            android:textStyle="normal"
+                        />
+    
+                        <TextView
+                            android:text="3. Подолжительность маршрута"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_height="0dp"
+                            android:textColor="#397ced"
+                            android:id="@+id/txtCreateGenre"
+                            android:gravity="center"
+                            android:textStyle="normal"/>
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="240"
+                            android:id="@+id/seek"
+                            android:progress="15"/>
+                        
+                         <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/btnAdd"
+                            android:text="Применить"
+                            android:textSize="10dp"
+                            android:textColor="#ffffff"
+                            android:background="#397ced"
+                            android:layout_marginTop="10dp"/>
+
+</LinearLayout>

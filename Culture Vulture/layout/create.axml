@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/background_light"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:dividerPadding="15dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableLeft = "@drawable/plus"
+            android:layout_weight="1"
+            android:id="@+id/buttonCreateRoute"
+            android:textColor="#00b0e4" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonMyRoutes"
+            android:textColor="#00b0e4" 
+            android:drawableLeft = "@drawable/popular"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonPopular"
+            android:drawableLeft = "@drawable/my_routes"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonProfile"
+            android:drawableLeft = "@drawable/profile"
+            android:textColor="#00b0e4" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Создание маршрута"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:textColor="#397ced"
+        android:id="@+id/txtCreateRoute"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+
+    <TextView
+        android:text="Здесь вы можете создать маршрут, выбрав наиболее интересные вам жанры"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="20"
+        android:textColor="#ff2f3b6c"
+        android:id="@+id/description"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:text="Настроить"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/buttonFilters"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="10dp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:background="#ff397ced"
+        />
+
+    <Button
+        android:text="Создать"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/buttonCreate"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="10dp"
+        android:textColor="#ffffffff"
+        android:background="#ff397ced"
+        android:gravity="center"/>
+
+</LinearLayout>

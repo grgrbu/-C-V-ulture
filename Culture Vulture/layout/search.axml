@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft = "5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:dividerPadding="15dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableLeft = "@drawable/plus"
+            android:layout_weight="1"
+            android:id="@+id/buttonCreateRoute"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonMyRoutes"
+            android:textColor="#00b0e4"
+            android:drawableLeft = "@drawable/popular"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonPopular"
+            android:drawableLeft = "@drawable/my_routes"
+            android:textColor="#00b0e4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:id="@+id/buttonProfile"
+            android:drawableLeft = "@drawable/profile"
+            android:textColor="#00b0e4" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop = "@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:text="Загрузить изображение"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:drawableLeft = "@drawable/download"
+        android:background="#ff4d80e8" 
+        android:layout_marginBottom = "@dimen/abc_action_bar_content_inset_material"
+        android:layout_gravity="center_vertical|center_horizontal"
+    />
+
+    <Button
+        android:text="Искать"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:drawableLeft = "@drawable/search"
+        android:background="#ff4d80e8" 
+        android:layout_gravity="center_vertical|center_horizontal"/>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1" />
+    
+</LinearLayout>
