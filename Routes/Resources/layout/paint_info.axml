@@ -87,17 +87,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="195.0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2"
+                android:id="@+id/textView57"
                 android:layout_marginRight="25.0dp"
                 android:layout_marginBottom = "25px" />
-
-            <TextView
-                android:text="Следующая картина Вашего маршрута находится в зале номер"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="195.0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:layout_marginRight="25.0dp" />
         </LinearLayout>
 
         <LinearLayout

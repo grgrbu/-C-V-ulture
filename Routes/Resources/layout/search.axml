@@ -66,9 +66,14 @@
         android:text="Искать"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/button5"
         android:drawableLeft = "@drawable/search"
         android:background="#ff4d80e8" 
         android:layout_gravity="center_vertical|center_horizontal"/>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1" />
     
 </LinearLayout>
